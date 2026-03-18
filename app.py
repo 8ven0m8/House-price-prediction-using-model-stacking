@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 import pickle
 import pandas as pd
-import numpy as np
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -14,8 +13,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# load trained models
-rf, lgbm, xgb = pickle.load(open("model.pkl", "rb"))
+# load trained model (single XGB)
+xgb = pickle.load(open("model.pkl", "rb"))
 
 # EXACT columns from X_train (must match)
 expected_cols = [
@@ -38,12 +37,8 @@ def predict(data: dict):
         # enforce same column order as training
         features = features[expected_cols]
 
-        # ensemble prediction (same as notebook)
-        prediction = (
-            0.4 * xgb.predict(features) +
-            0.3 * rf.predict(features) +
-            0.3 * lgbm.predict(features)
-        )
+        # single model prediction
+        prediction = xgb.predict(features)
 
         return {"predicted_price": float(prediction[0])}
 
