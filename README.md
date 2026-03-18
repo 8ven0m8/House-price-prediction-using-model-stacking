@@ -8,7 +8,7 @@ This project uses 3 Machine Learning algorithms stacked together to predict the 
 
 Visit kaggle notebook :- https://www.kaggle.com/code/pranjalsapkota/house-price-prediction-using-model-stacking
 
-#### The stack's MAE and MAPE is 48.7k and 11.05% respectively.
+#### The stack's MAE and MAPE is 48.68k and 11.31% respectively.
 
 ## Dataset
 
