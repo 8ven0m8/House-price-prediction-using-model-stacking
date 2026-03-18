@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-import pickle
+import joblib
 import pandas as pd
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -14,7 +14,7 @@ app.add_middleware(
 )
 
 # load trained model (single XGB)
-xgb = pickle.load(open("model.pkl", "rb"))
+xgb = joblib.load("model.pkl")
 
 # EXACT columns from X_train (must match)
 expected_cols = [
