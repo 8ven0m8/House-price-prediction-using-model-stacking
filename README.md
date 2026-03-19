@@ -79,7 +79,7 @@ Example house data:
 The model predicts the house price, compares to actual price and gives the error amount.
 
 For API
-<pre>```
+<pre>
 {
   "sqft_living": 1940,
   "sqft_lot": 10133,
@@ -100,7 +100,7 @@ For API
   "house_age": 23,
   "zipcode_mean": 301866.530806
 }
-```</pre>
+</pre>
 
 ## Technologies Used
 
