@@ -78,6 +78,30 @@ Example house data:
 
 The model predicts the house price, compares to actual price and gives the error amount.
 
+For API
+<pre>```
+{
+  "sqft_living": 1940,
+  "sqft_lot": 10133,
+  "floors": 2,
+  "view": 0,
+  "condition": 3,
+  "grade": 8,
+  "sqft_above": 1940,
+  "yr_built": 1992,
+  "yr_renovated": 0,
+  "lat": 47.3877,
+  "long": -122.171,
+  "sqft_living15": 1940,
+  "sqft_lot15": 7265,
+  "year": 2015,
+  "location_cluster": 9,
+  "living_density": 0.191454,
+  "house_age": 23,
+  "zipcode_mean": 301866.530806
+}
+```</pre>
+
 ## Technologies Used
 
 * Python
