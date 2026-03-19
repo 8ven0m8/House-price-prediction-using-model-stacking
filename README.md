@@ -10,6 +10,11 @@ Visit kaggle notebook :- https://www.kaggle.com/code/pranjalsapkota/house-price-
 
 #### The stack's MAE and MAPE is 48.68k and 11.31% respectively.
 
+## Updates:
+* 17th Mar 2026: Implemented fastAPI. Test the api on 
+https://house-price-prediction-using-model.onrender.com/docs
+(Its a free tier render deployment so the service might be sleeping)
+
 ## Dataset
 
 The dataset used in this project contains house sale prices of King county, USA.
